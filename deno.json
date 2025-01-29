@@ -1,0 +1,11 @@
+{
+  "tasks": {
+    "dev": "deno run -A --watch=game main.ts"
+  },
+  "imports": {
+    "@oak/oak": "jsr:@oak/oak@^17.1.4",
+    "@std/assert": "jsr:@std/assert@1",
+    "phaser": "https://cdnjs.cloudflare.com/ajax/libs/phaser/3.87.0/phaser.esm.min.js",
+    "esbuild": "https://deno.land/x/esbuild@v0.24.2/mod.js"
+  }
+}
