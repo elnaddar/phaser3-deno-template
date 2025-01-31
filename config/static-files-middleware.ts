@@ -1,4 +1,4 @@
-import { Context, Next, send } from '@oak/oak';
+import { type Context, type Next, send } from '@oak/oak';
 
 export default function createStatics(
   staticFolderPath: string = 'static',
