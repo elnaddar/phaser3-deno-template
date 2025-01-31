@@ -1,4 +1,4 @@
-import { build } from 'https://deno.land/x/esbuild@v0.24.2/mod.js';
+import { build } from 'esbuild';
 
 /**
  * Build the Phaser code using esbuild
