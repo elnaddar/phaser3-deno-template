@@ -1,6 +1,6 @@
 {
   "name": "@elnaddar/deno-phaser",
-  "version": "3.87.0-1.0.1",
+  "version": "3.87.01",
   "exports": "./mod.ts",
   "license": "MIT",
   "imports": {
