@@ -1,7 +1,4 @@
-import paserServer from './config/server.ts';
-
-// Re-export everything from phaser:
-export * from 'phaser';
+import phaserServer from './config/server.ts';
 
 // Export `paserServer` properly:
-export { paserServer };
+export default phaserServer;
