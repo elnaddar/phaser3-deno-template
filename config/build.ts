@@ -4,11 +4,15 @@ import { build } from 'esbuild';
  * Build the Phaser code using esbuild
  * @returns {Promise<void>}
  */
-export async function buildPhaser(): Promise<void> {
+export default async function buildPhaser(
+  gameEntryPoint: string = 'game/main.ts',
+  staticFolderPath: string = 'static',
+  outfileName: string = 'main.js'
+): Promise<void> {
   await build({
-    entryPoints: ['game/main.ts'],
+    entryPoints: [gameEntryPoint],
     bundle: true,
-    outfile: Deno.env.get('STATIC_FOLDER') ?? 'build/static' + '/main.js',
+    outfile: staticFolderPath + '/' + outfileName,
     write: true,
     format: 'esm',
     minify: true,
@@ -21,5 +25,3 @@ export async function buildPhaser(): Promise<void> {
     target: ['esnext'],
   });
 }
-
-await buildPhaser();
